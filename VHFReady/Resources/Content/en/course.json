@@ -1,0 +1,765 @@
+{
+ "version": 1,
+ "modules": [
+  {
+   "id": "basics",
+   "titleKey": "Radio basics & licensing",
+   "symbol": "antenna.radiowaves.left.and.right",
+   "lessons": [
+    {
+     "id": "basics-1",
+     "title": "Who needs a qualification",
+     "minutes": 4,
+     "blocks": [
+      {
+       "type": "text",
+       "text": "Marine VHF is a shared, regulated service. Anyone who transmits on it must hold an operator's certificate, and the radio installation itself must be licensed. The Short Range Certificate (SRC) is the operator qualification for VHF, including Digital Selective Calling (DSC)."
+      },
+      {
+       "type": "fact",
+       "title": "Two licences",
+       "body": "One covers the radio installation on the vessel. The other is your personal operator's certificate."
+      },
+      {
+       "type": "list",
+       "items": [
+        "The ship radio licence covers the vessel's fixed and handheld radios, EPIRB and AIS, and it is where the vessel's call sign and MMSI come from.",
+        "A licensed handheld kept for use on different boats can be covered by a separate portable licence.",
+        "An unqualified person may transmit only under the direct supervision of a certificate holder, or in a genuine distress situation."
+       ]
+      },
+      {
+       "type": "heading",
+       "text": "Your responsibilities"
+      },
+      {
+       "type": "list",
+       "items": [
+        "The skipper (master) has overall authority over the station and its use.",
+        "Secrecy of correspondence: you must not repeat or use anything you overhear that was not meant for you, except distress, urgency and safety traffic.",
+        "No offensive language, no unnecessary or false transmissions, and never a hoax distress call.",
+        "Marine VHF is for use at sea. Using it ashore, other than from licensed stations, is generally not allowed."
+       ]
+      },
+      {
+       "type": "tip",
+       "text": "Rules differ slightly between countries. Always check the current requirements of the country where your vessel is registered."
+      }
+     ]
+    },
+    {
+     "id": "basics-2",
+     "title": "How VHF signals travel",
+     "minutes": 5,
+     "blocks": [
+      {
+       "type": "text",
+       "text": "Marine VHF uses frequencies of roughly 156 to 174 MHz. At these frequencies signals travel in nearly straight lines, so range depends mainly on how high the two antennas are, not on transmitter power."
+      },
+      {
+       "type": "fact",
+       "title": "Line of sight",
+       "body": "Approximate range in nautical miles = 2.25 × (√ height A + √ height B), heights in metres."
+      },
+      {
+       "type": "text",
+       "text": "Example: a yacht with an antenna 9 m above the water talking to another 9 m antenna gives about 2.25 × (3 + 3) = 13.5 nautical miles (about 25 km). A coast station antenna high on a cliff may be heard 30 nautical miles or more away."
+      },
+      {
+       "type": "list",
+       "items": [
+        "Fixed radios transmit up to 25 watts. Use low power (1 watt) for short-range calls, such as in a marina.",
+        "Handhelds usually transmit up to 5 or 6 watts and, with a low antenna, often reach only a few miles.",
+        "Hills, buildings and large ships between stations reduce range."
+       ]
+      },
+      {
+       "type": "heading",
+       "text": "Simplex and duplex"
+      },
+      {
+       "type": "text",
+       "text": "Most ship-to-ship channels are simplex: both stations use the same frequency, so only one can talk at a time. Some channels used by coast stations are duplex, using two frequencies. Either way, you must release the transmit button to hear the reply."
+      },
+      {
+       "type": "tip",
+       "text": "1 nautical mile = 1,852 metres (about 1.15 statute miles). Marine radio and navigation always use nautical miles."
+      }
+     ]
+    },
+    {
+     "id": "basics-3",
+     "title": "Using the radio well",
+     "minutes": 4,
+     "blocks": [
+      {
+       "type": "heading",
+       "text": "The controls you will use"
+      },
+      {
+       "type": "list",
+       "items": [
+        "Squelch: cuts background hiss. Turn it until the noise just stops; too far and you will miss weak stations.",
+        "Dual watch: listens to Channel 16 and one other channel in turn. Tri-watch adds a third.",
+        "16/9 key: jumps straight to Channel 16.",
+        "High/low power switch.",
+        "Distress button: under a cover, for DSC distress alerts only."
+       ]
+      },
+      {
+       "type": "heading",
+       "text": "Good habits"
+      },
+      {
+       "type": "list",
+       "items": [
+        "Listen before you transmit so you do not talk over someone.",
+        "Think about what you will say, keep it short, and speak clearly at normal speed.",
+        "Hold the microphone a few centimetres from your mouth and pause briefly after pressing the transmit button.",
+        "Keep a radio log of distress, urgency and safety traffic you hear."
+       ]
+      },
+      {
+       "type": "fact",
+       "title": "Why VHF, not a phone?",
+       "body": "A VHF call is heard by every station in range, including rescuers and nearby vessels. A phone call reaches one person."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "procedure",
+   "titleKey": "Channels & calling procedure",
+   "symbol": "dial.medium",
+   "lessons": [
+    {
+     "id": "procedure-1",
+     "title": "Channels you must know",
+     "minutes": 5,
+     "blocks": [
+      {
+       "type": "fact",
+       "title": "Channel 16",
+       "body": "Distress, urgency, safety and calling. Keep a listening watch here whenever you are at sea."
+      },
+      {
+       "type": "fact",
+       "title": "Channel 70",
+       "body": "Digital Selective Calling only. Voice is never used on Channel 70."
+      },
+      {
+       "type": "list",
+       "items": [
+        "Channel 6: the primary intership safety channel, also used for search and rescue coordination.",
+        "Channel 13: navigation safety between ships (bridge-to-bridge).",
+        "Common intership channels for routine chat include 8, 72 and 77, but check local practice.",
+        "Port operations and marinas have their own published channels.",
+        "Some coast stations move small craft to a specific safety working channel (in UK waters this is Channel 67)."
+       ]
+      },
+      {
+       "type": "warning",
+       "text": "Channel 16 is not for chatting. Use it only to make contact, then move to a working channel."
+      },
+      {
+       "type": "tip",
+       "text": "Channel use differs between regions. US channel plans, for example, assign some channels differently. Always check the almanac or pilot for the area."
+      }
+     ]
+    },
+    {
+     "id": "procedure-2",
+     "title": "Making a routine call",
+     "minutes": 6,
+     "blocks": [
+      {
+       "type": "text",
+       "text": "A routine call to another vessel has a set shape: who you are calling, who you are, and what you want, ending with OVER."
+      },
+      {
+       "type": "script",
+       "lines": [
+        "SEA OTTER, SEA OTTER",
+        "THIS IS BLUE HERON, BLUE HERON",
+        "CHANNEL 72",
+        "OVER"
+       ]
+      },
+      {
+       "type": "text",
+       "text": "The other vessel replies and confirms the channel. Both switch to 72 and the conversation continues there:"
+      },
+      {
+       "type": "script",
+       "lines": [
+        "BLUE HERON, THIS IS SEA OTTER",
+        "CHANNEL 72",
+        "OVER"
+       ]
+      },
+      {
+       "type": "list",
+       "items": [
+        "Say the called station's name up to three times (once or twice is usually enough in good conditions), and your own up to three times.",
+        "End each transmission with OVER when you expect a reply, and finish the conversation with OUT.",
+        "Never say OVER and OUT together: one invites a reply, the other ends the exchange.",
+        "If there is no answer, wait at least two minutes before calling again on Channel 16."
+       ]
+      },
+      {
+       "type": "tip",
+       "text": "Give the working channel in your first call so that time on Channel 16 is kept to a minimum."
+      }
+     ]
+    },
+    {
+     "id": "procedure-3",
+     "title": "Coast stations and radio checks",
+     "minutes": 4,
+     "blocks": [
+      {
+       "type": "text",
+       "text": "Coast stations include coastguard centres, port authorities and marinas. Call them on their published working channel, or on Channel 16 if that is what they advertise."
+      },
+      {
+       "type": "heading",
+       "text": "Radio checks"
+      },
+      {
+       "type": "text",
+       "text": "A radio check asks another station how well your signal is received. Avoid using Channel 16 for radio checks. Use a working channel with another vessel or a marina, or a DSC test call where supported."
+      },
+      {
+       "type": "script",
+       "lines": [
+        "SEA OTTER, THIS IS BLUE HERON",
+        "RADIO CHECK, CHANNEL 72",
+        "OVER"
+       ]
+      },
+      {
+       "type": "script",
+       "lines": [
+        "BLUE HERON, THIS IS SEA OTTER",
+        "LOUD AND CLEAR",
+        "OVER"
+       ]
+      },
+      {
+       "type": "list",
+       "items": [
+        "Signal reports often use words such as loud and clear, readable, weak, or broken.",
+        "If you only caught part of a call, use STATION CALLING rather than guessing the name."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dsc",
+   "titleKey": "DSC operation",
+   "symbol": "dot.radiowaves.right",
+   "lessons": [
+    {
+     "id": "dsc-1",
+     "title": "MMSI and DSC basics",
+     "minutes": 5,
+     "blocks": [
+      {
+       "type": "text",
+       "text": "Digital Selective Calling (DSC) sends a short digital message on Channel 70. It can alert every station in range, or ring a single vessel or coast station like a phone call. When the alert is a distress alert it carries your identity and, if connected to GPS, your position."
+      },
+      {
+       "type": "fact",
+       "title": "MMSI",
+       "body": "A nine-digit Maritime Mobile Service Identity, unique to the vessel's DSC equipment."
+      },
+      {
+       "type": "list",
+       "items": [
+        "The first three digits of a ship's MMSI are the Maritime Identification Digits (MID), showing the country. UK ships, for example, use MIDs 232 to 235.",
+        "Coast station MMSIs start with 00.",
+        "Group MMSIs start with a single 0.",
+        "The MMSI is issued with the ship radio licence and must be programmed into the radio. On most sets it can be entered only once."
+       ]
+      },
+      {
+       "type": "warning",
+       "text": "Connect a working GPS feed to your DSC radio. Without it, a distress alert goes out with no position unless you enter one manually."
+      }
+     ]
+    },
+    {
+     "id": "dsc-2",
+     "title": "Sending a DSC distress alert",
+     "minutes": 6,
+     "blocks": [
+      {
+       "type": "text",
+       "text": "A DSC distress alert is the fastest way to tell rescuers you are in grave and imminent danger."
+      },
+      {
+       "type": "list",
+       "items": [
+        "Lift the cover over the red distress button.",
+        "If there is time, choose the nature of distress from the menu (designated alert). If not, send an undesignated alert.",
+        "Press and hold the button for about five seconds until the alert is sent.",
+        "The radio switches itself to Channel 16. Wait briefly for an acknowledgement, then send your Mayday voice call.",
+        "Until it is acknowledged, the radio repeats the alert automatically every few minutes."
+       ]
+      },
+      {
+       "type": "heading",
+       "text": "If you receive a DSC distress alert"
+      },
+      {
+       "type": "list",
+       "items": [
+        "Listen on Channel 16 for the voice Mayday and write down the details.",
+        "Do not acknowledge by DSC. In coastal waters the coast station acknowledges.",
+        "If no coast station answers and you can help, acknowledge by voice on Channel 16 and inform the coastguard by any means, including a Mayday relay."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "dsc-3",
+     "title": "Other DSC calls and false alerts",
+     "minutes": 5,
+     "blocks": [
+      {
+       "type": "heading",
+       "text": "Routine individual calls"
+      },
+      {
+       "type": "text",
+       "text": "Enter the other vessel's MMSI, choose a working channel, and send. Their radio rings and, when they accept, both sets move to the working channel for the voice conversation."
+      },
+      {
+       "type": "heading",
+       "text": "Urgency and safety alerts"
+      },
+      {
+       "type": "text",
+       "text": "An all-ships DSC urgency or safety alert announces that a Pan-Pan or Sécurité voice message is about to follow on Channel 16 or a stated working channel."
+      },
+      {
+       "type": "heading",
+       "text": "Cancelling a false alert"
+      },
+      {
+       "type": "text",
+       "text": "If you send a distress alert by mistake, do not switch off. Cancel it using the radio's cancel function if there is one, then make a voice cancellation on Channel 16 straight away:"
+      },
+      {
+       "type": "script",
+       "lines": [
+        "ALL STATIONS, ALL STATIONS, ALL STATIONS",
+        "THIS IS SEA OTTER, SEA OTTER, SEA OTTER",
+        "CALL SIGN MIKE X-RAY YANKEE ZULU NINER",
+        "MMSI TOO TREE FIFE ZERO ZERO ZERO ZERO ZERO ZERO",
+        "POSITION 50°45'N 001°18'W",
+        "CANCEL MY DISTRESS ALERT OF 15 NOVEMBER AT 1420 UTC",
+        "SEA OTTER, MIKE X-RAY YANKEE ZULU NINER, MMSI TOO TREE FIFE ZERO ZERO ZERO ZERO ZERO ZERO",
+        "OUT"
+       ]
+      },
+      {
+       "type": "tip",
+       "text": "False alerts are common and rescuers are understanding. What matters is cancelling quickly."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "distress",
+   "titleKey": "Distress, urgency & safety",
+   "symbol": "lifepreserver",
+   "lessons": [
+    {
+     "id": "distress-1",
+     "title": "The three priority signals",
+     "minutes": 4,
+     "blocks": [
+      {
+       "type": "fact",
+       "title": "MAYDAY",
+       "body": "Distress. A vessel, aircraft or person is in grave and imminent danger and needs immediate assistance."
+      },
+      {
+       "type": "fact",
+       "title": "PAN-PAN",
+       "body": "Urgency. An urgent message about the safety of a vessel or person, where danger is not yet grave and imminent."
+      },
+      {
+       "type": "fact",
+       "title": "SÉCURITÉ",
+       "body": "Safety. An important navigation or weather warning. Pronounced say-cure-ee-tay."
+      },
+      {
+       "type": "text",
+       "text": "Distress traffic has absolute priority over everything else. Urgency comes next, then safety, then routine traffic."
+      },
+      {
+       "type": "tip",
+       "text": "Examples: sinking or fire out of control is a Mayday; a dismasted yacht drifting clear of danger, or a crew member needing medical advice, is a Pan-Pan; a floating container sighted in a shipping lane is a Sécurité."
+      }
+     ]
+    },
+    {
+     "id": "distress-2",
+     "title": "The Mayday call",
+     "minutes": 6,
+     "blocks": [
+      {
+       "type": "text",
+       "text": "Use Mayday only when there is grave and imminent danger and immediate assistance is needed. Send a DSC distress alert first if you can, then make the voice call on Channel 16 on high power."
+      },
+      {
+       "type": "script",
+       "lines": [
+        "MAYDAY MAYDAY MAYDAY",
+        "THIS IS SEA OTTER, SEA OTTER, SEA OTTER",
+        "CALL SIGN MIKE X-RAY YANKEE ZULU NINER, MMSI TOO TREE FIFE ZERO ZERO ZERO ZERO ZERO ZERO",
+        "MAYDAY SEA OTTER, MIKE X-RAY YANKEE ZULU NINER, MMSI TOO TREE FIFE ZERO ZERO ZERO ZERO ZERO ZERO",
+        "MY POSITION IS 50°45'N 001°18'W",
+        "FIRE ON BOARD, OUT OF CONTROL",
+        "I REQUIRE IMMEDIATE ASSISTANCE",
+        "3 PERSONS ON BOARD",
+        "ABANDONING TO LIFERAFT",
+        "OVER"
+       ]
+      },
+      {
+       "type": "fact",
+       "title": "MIPDANIO",
+       "body": "Mayday, Identify, Position, Distress, Assistance, Number, Information, Over."
+      },
+      {
+       "type": "list",
+       "items": [
+        "Give your position as latitude and longitude, or as a true bearing and distance from a charted point.",
+        "Speak slowly. Rescuers need to write everything down.",
+        "If nobody replies, repeat the call. Consider other channels or means if there is still no answer."
+       ]
+      },
+      {
+       "type": "warning",
+       "text": "Never practise a Mayday on air. Use the practice builder in this app instead."
+      }
+     ]
+    },
+    {
+     "id": "distress-3",
+     "title": "Acknowledging, relaying and radio silence",
+     "minutes": 6,
+     "blocks": [
+      {
+       "type": "heading",
+       "text": "Acknowledging a Mayday"
+      },
+      {
+       "type": "text",
+       "text": "If you hear a Mayday and no coast station answers, and you can help, acknowledge it:"
+      },
+      {
+       "type": "script",
+       "lines": [
+        "MAYDAY",
+        "SEA OTTER, SEA OTTER, SEA OTTER",
+        "THIS IS BLUE HERON, BLUE HERON, BLUE HERON",
+        "RECEIVED MAYDAY",
+        "OVER"
+       ]
+      },
+      {
+       "type": "heading",
+       "text": "Mayday relay"
+      },
+      {
+       "type": "text",
+       "text": "A Mayday relay passes a distress message on, for example when the casualty cannot be heard by the coastguard or you see distress flares."
+      },
+      {
+       "type": "script",
+       "lines": [
+        "MAYDAY RELAY, MAYDAY RELAY, MAYDAY RELAY",
+        "THIS IS BLUE HERON, BLUE HERON, BLUE HERON",
+        "FOLLOWING RECEIVED FROM SEA OTTER",
+        "MAYDAY SEA OTTER ... (repeat the original message)",
+        "OVER"
+       ]
+      },
+      {
+       "type": "heading",
+       "text": "Radio silence"
+      },
+      {
+       "type": "list",
+       "items": [
+        "SEELONCE MAYDAY: silence imposed by the station controlling distress traffic.",
+        "SEELONCE DISTRESS: silence imposed by any other station near the incident.",
+        "PRUDONCE: restricted working may resume.",
+        "SEELONCE FEENEE: distress traffic is over and normal working may resume."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "distress-4",
+     "title": "Pan-Pan and Sécurité calls",
+     "minutes": 5,
+     "blocks": [
+      {
+       "type": "heading",
+       "text": "Pan-Pan"
+      },
+      {
+       "type": "script",
+       "lines": [
+        "PAN-PAN, PAN-PAN, PAN-PAN",
+        "ALL STATIONS, ALL STATIONS, ALL STATIONS",
+        "THIS IS BLUE HERON, BLUE HERON, BLUE HERON",
+        "CALL SIGN BRAVO HOTEL ROMEO WUN, MMSI TOO TREE TREE ZERO ZERO ZERO ZERO ZERO ZERO",
+        "MY POSITION IS 2 MILES SOUTH OF BLACK ROCK BUOY",
+        "DISMASTED, ENGINE WILL NOT START, DRIFTING, NO IMMEDIATE DANGER",
+        "REQUIRE TOW",
+        "4 PERSONS ON BOARD",
+        "OVER"
+       ]
+      },
+      {
+       "type": "heading",
+       "text": "Sécurité"
+      },
+      {
+       "type": "text",
+       "text": "Announce a safety message on Channel 16 and give a working channel for the full message, so that Channel 16 stays clear."
+      },
+      {
+       "type": "script",
+       "lines": [
+        "SÉCURITÉ, SÉCURITÉ, SÉCURITÉ",
+        "ALL STATIONS, ALL STATIONS, ALL STATIONS",
+        "THIS IS BLUE HERON, BLUE HERON, BLUE HERON",
+        "LARGE PARTLY SUBMERGED CONTAINER SIGHTED",
+        "POSITION 2 MILES EAST OF BLACK ROCK BUOY",
+        "DANGER TO NAVIGATION",
+        "OUT"
+       ]
+      },
+      {
+       "type": "tip",
+       "text": "Coastguards also use Sécurité calls to announce weather and navigation warnings, usually telling listeners which channel to switch to."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gmdss",
+   "titleKey": "GMDSS, EPIRB & SART",
+   "symbol": "globe.europe.africa",
+   "lessons": [
+    {
+     "id": "gmdss-1",
+     "title": "GMDSS and sea areas",
+     "minutes": 5,
+     "blocks": [
+      {
+       "type": "text",
+       "text": "The Global Maritime Distress and Safety System (GMDSS) is an international framework that combines radio, satellite and automated alerting so that a distress call is received ashore wherever a vessel is."
+      },
+      {
+       "type": "list",
+       "items": [
+        "Sea Area A1: within range of a shore VHF DSC station, typically 20 to 30 nautical miles from the coast.",
+        "Sea Area A2: within range of a shore MF DSC station, roughly 100 to 150 nautical miles, outside A1.",
+        "Sea Area A3: within coverage of geostationary communication satellites, roughly 70°N to 70°S, outside A1 and A2.",
+        "Sea Area A4: everything else, mainly the polar regions."
+       ]
+      },
+      {
+       "type": "text",
+       "text": "Leisure craft are not normally required to carry GMDSS equipment, but a DSC VHF radio means you are part of the system in coastal waters."
+      }
+     ]
+    },
+    {
+     "id": "gmdss-2",
+     "title": "EPIRBs, PLBs and SARTs",
+     "minutes": 6,
+     "blocks": [
+      {
+       "type": "fact",
+       "title": "EPIRB",
+       "body": "Emergency Position-Indicating Radio Beacon. Sends a 406 MHz satellite distress signal identifying the vessel, usually with a GNSS position."
+      },
+      {
+       "type": "list",
+       "items": [
+        "EPIRBs also transmit a low-power 121.5 MHz homing signal so rescuers can find you on scene.",
+        "They activate manually or, in a float-free bracket, automatically when submerged.",
+        "Register your EPIRB with the national authority and keep the details up to date. Rescuers use the registration to find out who you are and who to contact.",
+        "A PLB (Personal Locator Beacon) works on the same principle but is registered to a person and must be activated by hand."
+       ]
+      },
+      {
+       "type": "fact",
+       "title": "SART",
+       "body": "Search and Rescue Transponder. Helps rescuers locate a liferaft at close range."
+      },
+      {
+       "type": "list",
+       "items": [
+        "A radar SART responds to a 9 GHz (X-band) radar and shows as a line of 12 dots on the rescuer's radar screen, pointing out from your position.",
+        "An AIS-SART transmits your position as an AIS message, displayed on AIS-equipped plotters.",
+        "Mount a SART as high as possible in the liferaft to increase its detection range."
+       ]
+      },
+      {
+       "type": "warning",
+       "text": "If you activate a beacon by accident, switch it off and tell the coastguard straight away."
+      }
+     ]
+    },
+    {
+     "id": "gmdss-3",
+     "title": "Maritime safety information",
+     "minutes": 4,
+     "blocks": [
+      {
+       "type": "text",
+       "text": "Coast stations and coastguards broadcast weather forecasts, gale warnings and navigation warnings. These are known as Maritime Safety Information (MSI)."
+      },
+      {
+       "type": "list",
+       "items": [
+        "VHF broadcasts are usually announced on Channel 16 and then read on a working channel.",
+        "NAVTEX is an automated text service on 518 kHz (international, in English) and 490 kHz (often national language).",
+        "Your almanac lists broadcast times and channels for each area."
+       ]
+      },
+      {
+       "type": "tip",
+       "text": "Note the time and the working channel when you hear a broadcast announcement, then switch over to listen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "phonetics",
+   "titleKey": "Phonetics & prowords",
+   "symbol": "textformat.abc",
+   "lessons": [
+    {
+     "id": "phonetics-1",
+     "title": "The phonetic alphabet and numbers",
+     "minutes": 5,
+     "blocks": [
+      {
+       "type": "text",
+       "text": "Letters and numbers are easy to mishear on the radio. The international phonetic alphabet removes doubt. Use it for call signs, vessel names that might be misheard, and anything that has to be spelled."
+      },
+      {
+       "type": "list",
+       "items": [
+        "A ALFA, B BRAVO, C CHARLIE, D DELTA, E ECHO, F FOXTROT, G GOLF",
+        "H HOTEL, I INDIA, J JULIETT, K KILO, L LIMA, M MIKE, N NOVEMBER",
+        "O OSCAR, P PAPA, Q QUEBEC, R ROMEO, S SIERRA, T TANGO, U UNIFORM",
+        "V VICTOR, W WHISKEY, X X-RAY, Y YANKEE, Z ZULU"
+       ]
+      },
+      {
+       "type": "heading",
+       "text": "Numbers"
+      },
+      {
+       "type": "list",
+       "items": [
+        "0 ZERO, 1 WUN, 2 TOO, 3 TREE, 4 FOW-ER",
+        "5 FIFE, 6 SIX, 7 SEV-EN, 8 AIT, 9 NIN-ER"
+       ]
+      },
+      {
+       "type": "text",
+       "text": "Say each figure separately. An MMSI of 235 000 000 is spoken TOO TREE FIFE ZERO ZERO ZERO ZERO ZERO ZERO."
+      },
+      {
+       "type": "tip",
+       "text": "Practise with the Phonetic cards in Radio drills."
+      }
+     ]
+    },
+    {
+     "id": "phonetics-2",
+     "title": "Prowords",
+     "minutes": 5,
+     "blocks": [
+      {
+       "type": "text",
+       "text": "Procedure words (prowords) are short, fixed phrases with an agreed meaning. They save time and avoid confusion, so use them exactly."
+      },
+      {
+       "type": "list",
+       "items": [
+        "OVER: I have finished and expect a reply.",
+        "OUT: end of working, no reply expected.",
+        "RECEIVED: I have received your message.",
+        "SAY AGAIN: please repeat. I SAY AGAIN: I am repeating.",
+        "CORRECTION: I made an error, the correct version follows.",
+        "I SPELL: the next word is spelled phonetically.",
+        "WAIT: pause for a few seconds.",
+        "ALL AFTER / ALL BEFORE: the part of the message after or before a stated word.",
+        "STATION CALLING: I heard a call but not the caller's name."
+       ]
+      },
+      {
+       "type": "warning",
+       "text": "Avoid casual radio slang such as 'Roger that, over and out'. It is not standard and can cause confusion."
+      }
+     ]
+    },
+    {
+     "id": "phonetics-3",
+     "title": "Time and position",
+     "minutes": 4,
+     "blocks": [
+      {
+       "type": "heading",
+       "text": "Time"
+      },
+      {
+       "type": "text",
+       "text": "Use the 24-hour clock and, in distress and safety messages, Coordinated Universal Time (UTC). 2:20 pm UTC is said as ONE FOW-ER TOO ZERO UTC."
+      },
+      {
+       "type": "heading",
+       "text": "Position"
+      },
+      {
+       "type": "list",
+       "items": [
+        "Latitude and longitude: degrees and minutes, latitude first, for example 50°45'N 001°18'W.",
+        "Or a true bearing and distance from a charted point: 225 degrees true from Black Rock Buoy, 2 miles. The bearing is from the charted point to you."
+       ]
+      },
+      {
+       "type": "fact",
+       "title": "Units at sea",
+       "body": "Distance in nautical miles (1 nautical mile = 1,852 m), speed in knots, bearings in degrees true."
+      },
+      {
+       "type": "tip",
+       "text": "Keep your position written down or visible near the radio so you can give it immediately."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

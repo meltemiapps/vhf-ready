@@ -1,0 +1,616 @@
+{
+ "version": 1,
+ "questions": [
+  {
+   "id": "basics-1",
+   "module": "basics",
+   "prompt": "What does the operator's certificate cover?",
+   "options": [
+    "The vessel's radio installation",
+    "The person operating the radio",
+    "The vessel's insurance",
+    "Use of a mobile phone at sea"
+   ],
+   "answer": 1,
+   "explanation": "The operator's certificate is personal. The installation is covered by a separate ship radio licence."
+  },
+  {
+   "id": "basics-2",
+   "module": "basics",
+   "prompt": "Which factor most affects VHF range?",
+   "options": [
+    "Transmitter power",
+    "Antenna height",
+    "Time of day",
+    "Channel number"
+   ],
+   "answer": 1,
+   "explanation": "VHF travels in nearly straight lines, so antenna height matters far more than power."
+  },
+  {
+   "id": "basics-3",
+   "module": "basics",
+   "prompt": "Two antennas are each 4 m high. What is the approximate range?",
+   "options": [
+    "4.5 nautical miles",
+    "9 nautical miles",
+    "18 nautical miles",
+    "36 nautical miles"
+   ],
+   "answer": 1,
+   "explanation": "2.25 × (√4 + √4) = 2.25 × 4 = 9 nautical miles."
+  },
+  {
+   "id": "basics-4",
+   "module": "basics",
+   "prompt": "What is the maximum transmit power of a fixed marine VHF radio?",
+   "options": [
+    "1 watt",
+    "5 watts",
+    "25 watts",
+    "100 watts"
+   ],
+   "answer": 2,
+   "explanation": "Fixed sets transmit up to 25 W, with a 1 W low-power setting for short-range use."
+  },
+  {
+   "id": "basics-5",
+   "module": "basics",
+   "prompt": "What does the squelch control do?",
+   "options": [
+    "Changes the channel",
+    "Cuts background noise when no signal is present",
+    "Increases transmit power",
+    "Sends a DSC alert"
+   ],
+   "answer": 1,
+   "explanation": "Set squelch so the hiss just disappears; too high and weak signals are lost."
+  },
+  {
+   "id": "basics-6",
+   "module": "basics",
+   "prompt": "What does 'secrecy of correspondence' mean?",
+   "options": [
+    "You must encrypt your calls",
+    "You must not disclose or use traffic not intended for you",
+    "You must not talk about your own position",
+    "Calls may only be made in English"
+   ],
+   "answer": 1,
+   "explanation": "You may hear other people's calls, but you must not repeat or use them. Distress, urgency and safety traffic are the exception."
+  },
+  {
+   "id": "basics-7",
+   "module": "basics",
+   "prompt": "Why is VHF better than a mobile phone in an emergency?",
+   "options": [
+    "It is cheaper",
+    "Every station in range hears the call",
+    "It works anywhere in the world",
+    "It needs no battery"
+   ],
+   "answer": 1,
+   "explanation": "A VHF call reaches rescuers and nearby vessels at once. A phone reaches one person."
+  },
+  {
+   "id": "basics-8",
+   "module": "basics",
+   "prompt": "What does dual watch do?",
+   "options": [
+    "Transmits on two channels at once",
+    "Monitors Channel 16 and one other channel in turn",
+    "Doubles the range",
+    "Records calls"
+   ],
+   "answer": 1,
+   "explanation": "Dual watch alternates between Channel 16 and a selected channel so you do not miss calls on 16."
+  },
+  {
+   "id": "procedure-1",
+   "module": "procedure",
+   "prompt": "What is Channel 16 used for?",
+   "options": [
+    "Routine conversation",
+    "Distress, urgency, safety and calling",
+    "DSC only",
+    "Port operations only"
+   ],
+   "answer": 1,
+   "explanation": "Make contact on 16, then move to a working channel."
+  },
+  {
+   "id": "procedure-2",
+   "module": "procedure",
+   "prompt": "Which channel is used only for DSC?",
+   "options": [
+    "Channel 6",
+    "Channel 13",
+    "Channel 16",
+    "Channel 70"
+   ],
+   "answer": 3,
+   "explanation": "Channel 70 carries DSC data only. Voice is never used on it."
+  },
+  {
+   "id": "procedure-3",
+   "module": "procedure",
+   "prompt": "What is Channel 13 mainly used for?",
+   "options": [
+    "Marina bookings",
+    "Navigation safety between ships",
+    "Weather forecasts",
+    "DSC"
+   ],
+   "answer": 1,
+   "explanation": "Channel 13 is for bridge-to-bridge navigation safety."
+  },
+  {
+   "id": "procedure-4",
+   "module": "procedure",
+   "prompt": "Which is the primary intership safety channel?",
+   "options": [
+    "Channel 6",
+    "Channel 9",
+    "Channel 72",
+    "Channel 70"
+   ],
+   "answer": 0,
+   "explanation": "Channel 6 is for intership safety and search and rescue coordination, not routine chat."
+  },
+  {
+   "id": "procedure-5",
+   "module": "procedure",
+   "prompt": "How should you end a transmission when you expect a reply?",
+   "options": [
+    "OUT",
+    "OVER",
+    "OVER AND OUT",
+    "ROGER"
+   ],
+   "answer": 1,
+   "explanation": "OVER invites a reply. OUT ends the exchange. Never combine them."
+  },
+  {
+   "id": "procedure-6",
+   "module": "procedure",
+   "prompt": "No reply to your routine call on Channel 16. How long should you wait before calling again?",
+   "options": [
+    "10 seconds",
+    "30 seconds",
+    "At least 2 minutes",
+    "15 minutes"
+   ],
+   "answer": 2,
+   "explanation": "Waiting keeps Channel 16 clear and gives the other station time to respond."
+  },
+  {
+   "id": "procedure-7",
+   "module": "procedure",
+   "prompt": "Where should a radio check be made?",
+   "options": [
+    "On Channel 16",
+    "On a working channel, or by DSC test call where supported",
+    "On Channel 70 by voice",
+    "Only with the coastguard on 16"
+   ],
+   "answer": 1,
+   "explanation": "Keep Channel 16 clear. Use a working channel or a DSC test call."
+  },
+  {
+   "id": "procedure-8",
+   "module": "procedure",
+   "prompt": "You heard a call for your vessel but not who was calling. What do you say?",
+   "options": [
+    "SAY AGAIN",
+    "STATION CALLING",
+    "WHO IS THIS",
+    "ALL STATIONS"
+   ],
+   "answer": 1,
+   "explanation": "STATION CALLING is the correct proword when the caller's name was not heard."
+  },
+  {
+   "id": "dsc-1",
+   "module": "dsc",
+   "prompt": "How many digits does an MMSI have?",
+   "options": [
+    "7",
+    "8",
+    "9",
+    "12"
+   ],
+   "answer": 2,
+   "explanation": "An MMSI is always nine digits."
+  },
+  {
+   "id": "dsc-2",
+   "module": "dsc",
+   "prompt": "What do the first three digits of a ship's MMSI show?",
+   "options": [
+    "The vessel type",
+    "The country (Maritime Identification Digits)",
+    "The year of licence",
+    "The radio model"
+   ],
+   "answer": 1,
+   "explanation": "The MID identifies the country. UK ships use 232 to 235."
+  },
+  {
+   "id": "dsc-3",
+   "module": "dsc",
+   "prompt": "A coast station MMSI begins with…",
+   "options": [
+    "0",
+    "00",
+    "1",
+    "9"
+   ],
+   "answer": 1,
+   "explanation": "Coast stations start with 00. Group MMSIs start with a single 0."
+  },
+  {
+   "id": "dsc-4",
+   "module": "dsc",
+   "prompt": "How do you send a DSC distress alert?",
+   "options": [
+    "Say MAYDAY on Channel 70",
+    "Lift the cover and hold the distress button for about 5 seconds",
+    "Press the 16/9 key twice",
+    "Switch to high power"
+   ],
+   "answer": 1,
+   "explanation": "Hold the red button for about five seconds. Choose the nature of distress first if time allows."
+  },
+  {
+   "id": "dsc-5",
+   "module": "dsc",
+   "prompt": "What happens after a DSC distress alert is sent?",
+   "options": [
+    "The radio switches off",
+    "The radio switches to Channel 16 and repeats the alert until acknowledged",
+    "The radio waits on Channel 70 for a voice reply",
+    "Nothing until you press again"
+   ],
+   "answer": 1,
+   "explanation": "Wait briefly for acknowledgement, then send your voice Mayday on 16."
+  },
+  {
+   "id": "dsc-6",
+   "module": "dsc",
+   "prompt": "In coastal waters, how should another yacht respond to a DSC distress alert it receives?",
+   "options": [
+    "Acknowledge by DSC immediately",
+    "Listen on Channel 16 and leave acknowledgement to the coast station",
+    "Switch off the radio",
+    "Reply on Channel 70 by voice"
+   ],
+   "answer": 1,
+   "explanation": "Coast stations acknowledge. Listen on 16 and be ready to help or relay."
+  },
+  {
+   "id": "dsc-7",
+   "module": "dsc",
+   "prompt": "You sent a DSC distress alert by mistake. What should you do?",
+   "options": [
+    "Switch the radio off and say nothing",
+    "Cancel on the radio if possible and make a voice cancellation on Channel 16",
+    "Send a second alert",
+    "Call the coastguard tomorrow"
+   ],
+   "answer": 1,
+   "explanation": "Do not switch off. Cancel and announce the cancellation by voice on 16 straight away."
+  },
+  {
+   "id": "dsc-8",
+   "module": "dsc",
+   "prompt": "Why should a DSC radio be connected to GPS?",
+   "options": [
+    "To improve audio",
+    "So the distress alert includes your position",
+    "To increase range",
+    "It is needed to change channels"
+   ],
+   "answer": 1,
+   "explanation": "Without a position feed, rescuers receive your identity but not where you are."
+  },
+  {
+   "id": "distress-1",
+   "module": "distress",
+   "prompt": "When is a Mayday appropriate?",
+   "options": [
+    "Engine failure in open water, no danger",
+    "Grave and imminent danger needing immediate assistance",
+    "To request a weather forecast",
+    "A minor injury on board"
+   ],
+   "answer": 1,
+   "explanation": "Mayday is for grave and imminent danger only."
+  },
+  {
+   "id": "distress-2",
+   "module": "distress",
+   "prompt": "Which signal is used for an urgent message where danger is not yet grave and imminent?",
+   "options": [
+    "MAYDAY",
+    "PAN-PAN",
+    "SÉCURITÉ",
+    "SEELONCE"
+   ],
+   "answer": 1,
+   "explanation": "PAN-PAN is the urgency signal."
+  },
+  {
+   "id": "distress-3",
+   "module": "distress",
+   "prompt": "A floating container is drifting in a busy channel. Which signal fits?",
+   "options": [
+    "MAYDAY",
+    "PAN-PAN",
+    "SÉCURITÉ",
+    "MAYDAY RELAY"
+   ],
+   "answer": 2,
+   "explanation": "SÉCURITÉ announces navigation and weather safety information."
+  },
+  {
+   "id": "distress-4",
+   "module": "distress",
+   "prompt": "In the Mayday call, what follows the vessel's identification?",
+   "options": [
+    "Number of persons on board",
+    "Position",
+    "OVER",
+    "Nature of distress"
+   ],
+   "answer": 1,
+   "explanation": "Order: Mayday, identify, position, nature, assistance, number, information, over."
+  },
+  {
+   "id": "distress-5",
+   "module": "distress",
+   "prompt": "What does SEELONCE MAYDAY mean?",
+   "options": [
+    "Distress is over",
+    "Silence, imposed by the station controlling distress traffic",
+    "Restricted working may resume",
+    "Repeat your message"
+   ],
+   "answer": 1,
+   "explanation": "Only the controlling station uses SEELONCE MAYDAY."
+  },
+  {
+   "id": "distress-6",
+   "module": "distress",
+   "prompt": "Which proword means distress traffic has ended?",
+   "options": [
+    "PRUDONCE",
+    "SEELONCE DISTRESS",
+    "SEELONCE FEENEE",
+    "OUT"
+   ],
+   "answer": 2,
+   "explanation": "SEELONCE FEENEE: normal working may resume."
+  },
+  {
+   "id": "distress-7",
+   "module": "distress",
+   "prompt": "When would you send a MAYDAY RELAY?",
+   "options": [
+    "When you are in distress yourself",
+    "When passing on a distress message the coastguard may not have received",
+    "To cancel a false alert",
+    "To ask for a radio check"
+   ],
+   "answer": 1,
+   "explanation": "A relay passes on another vessel's distress, for example when the casualty is out of the coastguard's range."
+  },
+  {
+   "id": "distress-8",
+   "module": "distress",
+   "prompt": "How should a Sécurité message be handled on Channel 16?",
+   "options": [
+    "Read the whole message on 16",
+    "Announce on 16 and give a working channel for the full message",
+    "Send it only by DSC",
+    "Wait for permission from the coastguard"
+   ],
+   "answer": 1,
+   "explanation": "Keep 16 clear by moving the full message to a working channel."
+  },
+  {
+   "id": "distress-9",
+   "module": "distress",
+   "prompt": "What does PRUDONCE mean?",
+   "options": [
+    "Total silence",
+    "Restricted working may resume",
+    "Distress is over",
+    "Speak more slowly"
+   ],
+   "answer": 1,
+   "explanation": "PRUDONCE allows restricted working during distress traffic."
+  },
+  {
+   "id": "gmdss-1",
+   "module": "gmdss",
+   "prompt": "Sea Area A1 is defined by coverage of…",
+   "options": [
+    "MF DSC shore stations",
+    "VHF DSC shore stations",
+    "Geostationary satellites",
+    "NAVTEX"
+   ],
+   "answer": 1,
+   "explanation": "A1 is within range of a shore VHF DSC station, typically 20 to 30 nautical miles."
+  },
+  {
+   "id": "gmdss-2",
+   "module": "gmdss",
+   "prompt": "On what frequency does an EPIRB send its satellite distress signal?",
+   "options": [
+    "121.5 MHz",
+    "156.8 MHz",
+    "406 MHz",
+    "518 kHz"
+   ],
+   "answer": 2,
+   "explanation": "406 MHz goes to satellites. 121.5 MHz is for homing."
+  },
+  {
+   "id": "gmdss-3",
+   "module": "gmdss",
+   "prompt": "Why must an EPIRB be registered?",
+   "options": [
+    "To make it work",
+    "So rescuers know whose beacon it is and who to contact",
+    "To increase battery life",
+    "It is optional and unimportant"
+   ],
+   "answer": 1,
+   "explanation": "Registration links the beacon to your vessel and emergency contacts."
+  },
+  {
+   "id": "gmdss-4",
+   "module": "gmdss",
+   "prompt": "How does a radar SART appear on a rescuer's radar?",
+   "options": [
+    "A flashing circle",
+    "A line of 12 dots",
+    "A single bright spot",
+    "The vessel's name"
+   ],
+   "answer": 1,
+   "explanation": "A radar SART shows as 12 dots extending outwards from your position."
+  },
+  {
+   "id": "gmdss-5",
+   "module": "gmdss",
+   "prompt": "What should you do if you activate a beacon by accident?",
+   "options": [
+    "Leave it on",
+    "Switch it off and tell the coastguard straight away",
+    "Throw it overboard",
+    "Remove the battery and say nothing"
+   ],
+   "answer": 1,
+   "explanation": "Switching off and informing the coastguard prevents a needless search."
+  },
+  {
+   "id": "gmdss-6",
+   "module": "gmdss",
+   "prompt": "On what frequency is international NAVTEX broadcast in English?",
+   "options": [
+    "490 kHz",
+    "518 kHz",
+    "156.525 MHz",
+    "406 MHz"
+   ],
+   "answer": 1,
+   "explanation": "518 kHz carries the international service in English. 490 kHz is often national language."
+  },
+  {
+   "id": "gmdss-7",
+   "module": "gmdss",
+   "prompt": "How is a PLB different from an EPIRB?",
+   "options": [
+    "It uses Channel 16",
+    "It is registered to a person and activated by hand",
+    "It has no satellite signal",
+    "It only works in harbour"
+   ],
+   "answer": 1,
+   "explanation": "A PLB is personal and manually activated."
+  },
+  {
+   "id": "phonetics-1",
+   "module": "phonetics",
+   "prompt": "How is the letter J spelled phonetically?",
+   "options": [
+    "JULIET",
+    "JULIETT",
+    "JAMES",
+    "JOKER"
+   ],
+   "answer": 1,
+   "explanation": "The ITU spelling is JULIETT with two Ts."
+  },
+  {
+   "id": "phonetics-2",
+   "module": "phonetics",
+   "prompt": "How should the number 9 be spoken?",
+   "options": [
+    "NINE",
+    "NIN-ER",
+    "NEIN",
+    "NINETY"
+   ],
+   "answer": 1,
+   "explanation": "NIN-ER avoids confusion with the German 'nein'."
+  },
+  {
+   "id": "phonetics-3",
+   "module": "phonetics",
+   "prompt": "Which proword means 'I have finished and expect a reply'?",
+   "options": [
+    "OUT",
+    "OVER",
+    "WAIT",
+    "RECEIVED"
+   ],
+   "answer": 1,
+   "explanation": "OVER invites a reply."
+  },
+  {
+   "id": "phonetics-4",
+   "module": "phonetics",
+   "prompt": "Which proword asks the other station to repeat?",
+   "options": [
+    "I SAY AGAIN",
+    "SAY AGAIN",
+    "CORRECTION",
+    "ALL AFTER"
+   ],
+   "answer": 1,
+   "explanation": "SAY AGAIN means please repeat. I SAY AGAIN is used when you repeat."
+  },
+  {
+   "id": "phonetics-5",
+   "module": "phonetics",
+   "prompt": "Which time standard is used in distress and safety messages?",
+   "options": [
+    "Local time",
+    "UTC",
+    "Ship's time",
+    "Time of the nearest port"
+   ],
+   "answer": 1,
+   "explanation": "Use the 24-hour clock in UTC."
+  },
+  {
+   "id": "phonetics-6",
+   "module": "phonetics",
+   "prompt": "What is 1 nautical mile in metres?",
+   "options": [
+    "1,000 m",
+    "1,609 m",
+    "1,852 m",
+    "2,000 m"
+   ],
+   "answer": 2,
+   "explanation": "1 nautical mile = 1,852 metres."
+  },
+  {
+   "id": "phonetics-7",
+   "module": "phonetics",
+   "prompt": "A position given as a bearing and distance uses a bearing…",
+   "options": [
+    "Magnetic, from you to the point",
+    "True, from the charted point to you",
+    "Relative to your bow",
+    "In compass points"
+   ],
+   "answer": 1,
+   "explanation": "Bearings are given in degrees true, from the charted point to your position."
+  }
+ ]
+}
