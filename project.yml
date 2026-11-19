@@ -52,6 +52,9 @@ targets:
       base:
         GENERATE_INFOPLIST_FILE: YES
         PRODUCT_BUNDLE_IDENTIFIER: com.evangelos.vhfready.tests
+        # The app's PRODUCT_NAME contains a space, so XcodeGen's default test host path is wrong.
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/VHF Ready.app/VHF Ready"
+        BUNDLE_LOADER: "$(TEST_HOST)"
 schemes:
   VHFReady:
     build:
