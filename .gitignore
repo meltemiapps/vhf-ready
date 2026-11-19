@@ -11,3 +11,28 @@ build/
 
 # macOS
 .DS_Store
+
+# Archives and exports
+*.xcarchive
+*.xcresult
+*.xcdistributionlogs
+
+# Screenshots and scratch files
+screenshots/
+shots/
+scratch/
+*.tmp
+
+# Signing material and secrets: never commit
+*.p8
+*.p12
+*.cer
+*.mobileprovision
+*.provisionprofile
+*.jks
+*.keystore
+*.pem
+*.key
+AuthKey_*
+.env
+.env.*
