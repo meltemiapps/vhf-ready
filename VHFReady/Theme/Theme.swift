@@ -82,6 +82,44 @@ struct SecondaryButtonStyle: ButtonStyle {
     }
 }
 
+/// The one place that decides the direction of non-interface text. Interface
+/// chrome (navigation, tab bar, buttons, labels) always follows the interface language.
+enum ContentDirection {
+    /// Radio procedure: always English, always left-to-right, in every locale.
+    case procedure
+    /// Lessons, quiz prompts, answers and explanations. English content stays
+    /// left-to-right in a right-to-left interface; a translated content pack
+    /// follows the interface direction.
+    case study
+
+    static func resolve(_ kind: ContentDirection, contentLanguage: String,
+                        interface: LayoutDirection) -> LayoutDirection {
+        switch kind {
+        case .procedure: .leftToRight
+        case .study: contentLanguage == "en" ? .leftToRight : interface
+        }
+    }
+}
+
+private struct ContentDirectionModifier: ViewModifier {
+    let kind: ContentDirection
+    @Environment(ContentStore.self) private var store
+    @Environment(\.layoutDirection) private var interface
+
+    func body(content: Content) -> some View {
+        content.environment(\.layoutDirection,
+                            ContentDirection.resolve(kind, contentLanguage: store.contentLanguage,
+                                                     interface: interface))
+    }
+}
+
+extension View {
+    /// Applies `ContentDirection` to this view and everything inside it.
+    func contentDirection(_ kind: ContentDirection = .study) -> some View {
+        modifier(ContentDirectionModifier(kind: kind))
+    }
+}
+
 /// Radio procedure text is always English and always left-to-right,
 /// including when the interface runs in Arabic.
 struct ProcedureText: View {
@@ -91,6 +129,6 @@ struct ProcedureText: View {
             .font(.system(.callout, design: .monospaced))
             .multilineTextAlignment(.leading)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .environment(\.layoutDirection, .leftToRight)
+            .contentDirection(.procedure)
     }
 }

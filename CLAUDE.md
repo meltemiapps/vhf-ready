@@ -16,8 +16,9 @@ Unofficial, open-source iOS study guide for the marine VHF Short Range Certifica
 ```bash
 brew install xcodegen      # once
 xcodegen generate          # regenerates VHFReady.xcodeproj from project.yml (the .xcodeproj is git-ignored)
-xcodebuild -scheme VHFReady -destination 'platform=iOS Simulator,name=iPhone 16' build
-xcodebuild -scheme VHFReady -destination 'platform=iOS Simulator,name=iPhone 16' test
+# Simulator: iPhone 16 Pro (or the newest available iPhone simulator)
+xcodebuild -scheme VHFReady -destination 'platform=iOS Simulator,name=iPhone 16 Pro' build
+xcodebuild -scheme VHFReady -destination 'platform=iOS Simulator,name=iPhone 16 Pro' test
 ```
 
 This code was written without access to a Mac, so it has not been compiled yet. On the first build, fix any compiler errors before changing behaviour, then:

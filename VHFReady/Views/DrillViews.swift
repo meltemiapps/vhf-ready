@@ -28,6 +28,18 @@ struct FlashcardsView: View {
     private var cards: [Flashcard] { Phonetics.cards.filter { $0.deck == deck } }
 
     var body: some View {
+        // Same layout as before when it fits; scrolls at large accessibility text sizes.
+        ViewThatFits(in: .vertical) {
+            content
+            ScrollView { content }
+        }
+        .background(Theme.background)
+        .navigationTitle("Phonetic cards")
+        .navigationBarTitleDisplayMode(.inline)
+        .onChange(of: deck) { index = 0; flipped = false }
+    }
+
+    private var content: some View {
         VStack(spacing: 20) {
             Picker("Deck", selection: $deck) {
                 Text("Letters").tag(Flashcard.Deck.letters)
@@ -57,10 +69,6 @@ struct FlashcardsView: View {
             }
         }
         .padding(20)
-        .background(Theme.background)
-        .navigationTitle("Phonetic cards")
-        .navigationBarTitleDisplayMode(.inline)
-        .onChange(of: deck) { index = 0; flipped = false }
     }
 
     private func card(_ card: Flashcard) -> some View {
@@ -82,7 +90,7 @@ struct FlashcardsView: View {
                     }
                 }
             }
-            .environment(\.layoutDirection, .leftToRight)
+            .contentDirection(.procedure)
             .padding(24)
             .frame(maxWidth: .infinity, minHeight: 340)
             .background(Theme.card, in: RoundedRectangle(cornerRadius: 28, style: .continuous))
@@ -155,7 +163,7 @@ struct MaydayBuilderView: View {
 }
 
 /// Reads procedure aloud with an English voice, whatever the interface language.
-@Observable
+@MainActor @Observable
 final class Speaker: NSObject, AVSpeechSynthesizerDelegate {
     private let synth = AVSpeechSynthesizer()
     var isSpeaking = false
@@ -179,11 +187,13 @@ final class Speaker: NSObject, AVSpeechSynthesizerDelegate {
         isSpeaking = false
     }
 
-    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
-        isSpeaking = false
+    // The delegate protocol is Sendable and may be called off the main thread,
+    // so hop back to the main actor before touching UI state.
+    nonisolated func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+        Task { @MainActor in self.isSpeaking = false }
     }
 
-    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didCancel utterance: AVSpeechUtterance) {
-        isSpeaking = false
+    nonisolated func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didCancel utterance: AVSpeechUtterance) {
+        Task { @MainActor in self.isSpeaking = false }
     }
 }

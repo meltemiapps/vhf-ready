@@ -101,6 +101,8 @@ struct QuizView: View {
                     .font(.system(.title3, design: .rounded, weight: .semibold))
                     .foregroundStyle(Theme.navy)
                     .fixedSize(horizontal: false, vertical: true)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .contentDirection()
 
                 VStack(spacing: 10) {
                     ForEach(Array(q.options.enumerated()), id: \.offset) { i, option in
@@ -120,6 +122,8 @@ struct QuizView: View {
                         Text(verbatim: q.explanation)
                             .font(.subheadline)
                             .foregroundStyle(Theme.navy)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .contentDirection()
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .card()
@@ -214,6 +218,7 @@ struct AnswerButton: View {
             .overlay(RoundedRectangle(cornerRadius: 14).stroke(stroke, lineWidth: state == .idle ? 1 : 2))
         }
         .buttonStyle(.plain)
+        .contentDirection()
         .accessibilityAddTraits(state == .selected ? .isSelected : [])
     }
 

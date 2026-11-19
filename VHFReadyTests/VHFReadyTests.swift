@@ -1,4 +1,5 @@
 import XCTest
+import SwiftUI
 @testable import VHFReady
 
 final class VHFReadyTests: XCTestCase {
@@ -55,5 +56,16 @@ final class VHFReadyTests: XCTestCase {
         let lesson = Lesson(id: "x", title: "X", minutes: 1, blocks: [])
         ProgressStore(defaults: defaults).markComplete(lesson)
         XCTAssertTrue(ProgressStore(defaults: defaults).isComplete(lesson))
+    }
+
+    func testContentDirection() {
+        // English content stays left-to-right in a right-to-left interface.
+        XCTAssertEqual(ContentDirection.resolve(.study, contentLanguage: "en", interface: .rightToLeft), .leftToRight)
+        XCTAssertEqual(ContentDirection.resolve(.study, contentLanguage: "en", interface: .leftToRight), .leftToRight)
+        // A translated pack follows the interface.
+        XCTAssertEqual(ContentDirection.resolve(.study, contentLanguage: "ar", interface: .rightToLeft), .rightToLeft)
+        XCTAssertEqual(ContentDirection.resolve(.study, contentLanguage: "de", interface: .leftToRight), .leftToRight)
+        // Radio procedure is always left-to-right.
+        XCTAssertEqual(ContentDirection.resolve(.procedure, contentLanguage: "ar", interface: .rightToLeft), .leftToRight)
     }
 }
