@@ -40,5 +40,5 @@ This code was written without access to a Mac, so it has not been compiled yet. 
 - GitHub links in `Views/AboutViews.swift`: done (https://github.com/meltemiapps/vhf-ready).
 - Native-speaker review of translations, especially the disclaimer.
 - App Store privacy label: "Data Not Collected".
-- Re-check that the name is still free in App Store Connect (see `docs/NAME-CHECK.md`).
+- Re-check that the name is still free in App Store Connect (the trademark search notes are kept privately, outside the repo).
 - v1.1: translated content packs (`Content/<lang>/`), see CONTRIBUTING.md.
