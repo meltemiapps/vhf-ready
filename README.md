@@ -42,7 +42,8 @@ Before running on a device or submitting:
 Run tests with `⌘U` or:
 
 ```bash
-xcodebuild test -scheme VHFReady -destination 'platform=iOS Simulator,name=iPhone 16'
+# Simulator: iPhone 16 Pro (or the newest available iPhone simulator)
+xcodebuild test -scheme VHFReady -destination 'platform=iOS Simulator,name=iPhone 16 Pro'
 ```
 
 ## Project layout
