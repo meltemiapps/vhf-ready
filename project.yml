@@ -1,7 +1,7 @@
 # XcodeGen spec. Generate the Xcode project with:  xcodegen generate
 name: VHFReady
 options:
-  bundleIdPrefix: com.example          # change to your own reverse domain
+  bundleIdPrefix: com.evangelos
   deploymentTarget:
     iOS: "17.0"
   developmentLanguage: en
@@ -28,7 +28,7 @@ targets:
         buildPhase: resources
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.example.vhfready
+        PRODUCT_BUNDLE_IDENTIFIER: com.evangelos.vhfready
         PRODUCT_NAME: VHF Ready
         PRODUCT_MODULE_NAME: VHFReady
         TARGETED_DEVICE_FAMILY: "1,2"
@@ -51,7 +51,7 @@ targets:
     settings:
       base:
         GENERATE_INFOPLIST_FILE: YES
-        PRODUCT_BUNDLE_IDENTIFIER: com.example.vhfready.tests
+        PRODUCT_BUNDLE_IDENTIFIER: com.evangelos.vhfready.tests
 schemes:
   VHFReady:
     build:
