@@ -50,4 +50,4 @@ Any change to this policy will be published in this file in the public repositor
 
 ## Contact
 
-Open an issue on the project's GitHub repository.
+Email [support@meltemiapps.co.uk](mailto:support@meltemiapps.co.uk) or see <https://meltemiapps.co.uk/vhf-ready/support/>. You can also open an issue on the project's [GitHub repository](https://github.com/meltemiapps/vhf-ready/issues).
