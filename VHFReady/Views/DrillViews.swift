@@ -90,7 +90,7 @@ struct FlashcardsView: View {
                     }
                 }
             }
-            .environment(\.layoutDirection, .leftToRight)
+            .contentDirection(.procedure)
             .padding(24)
             .frame(maxWidth: .infinity, minHeight: 340)
             .background(Theme.card, in: RoundedRectangle(cornerRadius: 28, style: .continuous))

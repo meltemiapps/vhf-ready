@@ -54,6 +54,8 @@ struct LessonView: View {
                 Text(verbatim: lesson.title)
                     .font(.system(.title, design: .rounded, weight: .bold))
                     .foregroundStyle(Theme.navy)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .contentDirection()
 
                 if !content.isContentTranslated && (Bundle.main.preferredLocalizations.first ?? "en") != "en" {
                     ContentLanguageNote()
@@ -112,6 +114,12 @@ struct BlockView: View {
     let block: Block
 
     var body: some View {
+        blockContent
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .contentDirection()
+    }
+
+    @ViewBuilder private var blockContent: some View {
         switch block {
         case .heading(let text):
             Text(verbatim: text)
