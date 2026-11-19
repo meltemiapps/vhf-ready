@@ -37,7 +37,7 @@ This code was written without access to a Mac, so it has not been compiled yet. 
 ## Open items before App Store submission
 
 - Bundle ID and Development Team: done (`com.meltemiapps.vhfready`, team set in `project.yml`).
-- Replace `YOUR-GITHUB-USERNAME` in `Views/AboutViews.swift`.
+- GitHub links in `Views/AboutViews.swift`: done (https://github.com/meltemiapps/vhf-ready).
 - Native-speaker review of translations, especially the disclaimer.
 - App Store privacy label: "Data Not Collected".
 - Re-check that the name is still free in App Store Connect (see `docs/NAME-CHECK.md`).

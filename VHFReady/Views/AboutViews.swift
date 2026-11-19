@@ -2,10 +2,10 @@ import SwiftUI
 import UIKit
 
 enum Links {
-    // Replace with your public repository once it exists.
-    static let repository = URL(string: "https://github.com/YOUR-GITHUB-USERNAME/vhf-ready")!
-    static let privacy = URL(string: "https://github.com/YOUR-GITHUB-USERNAME/vhf-ready/blob/main/PRIVACY.md")!
-    static let disclaimer = URL(string: "https://github.com/YOUR-GITHUB-USERNAME/vhf-ready/blob/main/DISCLAIMER.md")!
+    // Public repository. Forks should point these at their own repository.
+    static let repository = URL(string: "https://github.com/meltemiapps/vhf-ready")!
+    static let privacy = URL(string: "https://github.com/meltemiapps/vhf-ready/blob/main/PRIVACY.md")!
+    static let disclaimer = URL(string: "https://github.com/meltemiapps/vhf-ready/blob/main/DISCLAIMER.md")!
 }
 
 struct DisclaimerText: View {

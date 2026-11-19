@@ -37,7 +37,7 @@ Before running on a device or submitting:
 
 1. The bundle ID is `com.meltemiapps.vhfready`. If you fork the project, change `bundleIdPrefix` and `PRODUCT_BUNDLE_IDENTIFIER` in `project.yml` to your own.
 2. If you fork the project, set `DEVELOPMENT_TEAM` in `project.yml` to your own team (signing is automatic).
-3. Replace `YOUR-GITHUB-USERNAME` in `VHFReady/Views/AboutViews.swift` with your repository URL.
+3. The About screen links to https://github.com/meltemiapps/vhf-ready (`VHFReady/Views/AboutViews.swift`). If you fork the project, point them at your repository.
 
 Run tests with `⌘U` or:
 
