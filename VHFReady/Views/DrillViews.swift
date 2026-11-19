@@ -155,7 +155,7 @@ struct MaydayBuilderView: View {
 }
 
 /// Reads procedure aloud with an English voice, whatever the interface language.
-@Observable
+@MainActor @Observable
 final class Speaker: NSObject, AVSpeechSynthesizerDelegate {
     private let synth = AVSpeechSynthesizer()
     var isSpeaking = false
@@ -179,11 +179,13 @@ final class Speaker: NSObject, AVSpeechSynthesizerDelegate {
         isSpeaking = false
     }
 
-    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
-        isSpeaking = false
+    // The delegate protocol is Sendable and may be called off the main thread,
+    // so hop back to the main actor before touching UI state.
+    nonisolated func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+        Task { @MainActor in self.isSpeaking = false }
     }
 
-    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didCancel utterance: AVSpeechUtterance) {
-        isSpeaking = false
+    nonisolated func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didCancel utterance: AVSpeechUtterance) {
+        Task { @MainActor in self.isSpeaking = false }
     }
 }
