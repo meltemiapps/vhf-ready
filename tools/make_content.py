@@ -267,7 +267,7 @@ q("gmdss", "On what frequency is international NAVTEX broadcast in English?", ["
 q("gmdss", "How is a PLB different from an EPIRB?", ["It uses Channel 16", "It is registered to a person and activated by hand", "It has no satellite signal", "It only works in harbour"], 1, "A PLB is personal and manually activated.")
 
 # phonetics
-q("phonetics", "How is the letter J spelled phonetically?", ["JULIET", "JULIETT", "JAMES", "JOKER"], 1, "The ITU spelling is JULIETT with two Ts.")
+q("phonetics", "How is the letter J spelled phonetically?", ["JULIET", "JULIETT", "JAMES", "JOKER"], 1, "The international spelling is JULIETT with two Ts.")
 q("phonetics", "How should the number 9 be spoken?", ["NINE", "NIN-ER", "NEIN", "NINETY"], 1, "NIN-ER avoids confusion with the German 'nein'.")
 q("phonetics", "Which proword means 'I have finished and expect a reply'?", ["OUT", "OVER", "WAIT", "RECEIVED"], 1, "OVER invites a reply.")
 q("phonetics", "Which proword asks the other station to repeat?", ["I SAY AGAIN", "SAY AGAIN", "CORRECTION", "ALL AFTER"], 1, "SAY AGAIN means please repeat. I SAY AGAIN is used when you repeat.")
