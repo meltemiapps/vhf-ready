@@ -28,6 +28,18 @@ struct FlashcardsView: View {
     private var cards: [Flashcard] { Phonetics.cards.filter { $0.deck == deck } }
 
     var body: some View {
+        // Same layout as before when it fits; scrolls at large accessibility text sizes.
+        ViewThatFits(in: .vertical) {
+            content
+            ScrollView { content }
+        }
+        .background(Theme.background)
+        .navigationTitle("Phonetic cards")
+        .navigationBarTitleDisplayMode(.inline)
+        .onChange(of: deck) { index = 0; flipped = false }
+    }
+
+    private var content: some View {
         VStack(spacing: 20) {
             Picker("Deck", selection: $deck) {
                 Text("Letters").tag(Flashcard.Deck.letters)
@@ -57,10 +69,6 @@ struct FlashcardsView: View {
             }
         }
         .padding(20)
-        .background(Theme.background)
-        .navigationTitle("Phonetic cards")
-        .navigationBarTitleDisplayMode(.inline)
-        .onChange(of: deck) { index = 0; flipped = false }
     }
 
     private func card(_ card: Flashcard) -> some View {
