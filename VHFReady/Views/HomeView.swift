@@ -159,6 +159,10 @@ struct ProgressRing: View {
             Text(fraction, format: .percent.precision(.fractionLength(0)))
                 .font(.system(.title3, design: .rounded, weight: .bold))
                 .foregroundStyle(.white)
+                // The ring has a fixed size, so shrink the label rather than truncate it at large text sizes.
+                .lineLimit(1)
+                .minimumScaleFactor(0.4)
+                .padding(.horizontal, 12)
         }
     }
 }
