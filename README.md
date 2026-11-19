@@ -35,8 +35,8 @@ open VHFReady.xcodeproj
 
 Before running on a device or submitting:
 
-1. In `project.yml`, change `bundleIdPrefix` and `PRODUCT_BUNDLE_IDENTIFIER` from `com.example...` to your own.
-2. Set your Development Team in Xcode (Signing & Capabilities).
+1. The bundle ID is `com.meltemiapps.vhfready`. If you fork the project, change `bundleIdPrefix` and `PRODUCT_BUNDLE_IDENTIFIER` in `project.yml` to your own.
+2. If you fork the project, set `DEVELOPMENT_TEAM` in `project.yml` to your own team (signing is automatic).
 3. Replace `YOUR-GITHUB-USERNAME` in `VHFReady/Views/AboutViews.swift` with your repository URL.
 
 Run tests with `⌘U` or:
