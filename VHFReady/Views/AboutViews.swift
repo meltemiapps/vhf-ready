@@ -2,9 +2,10 @@ import SwiftUI
 import UIKit
 
 enum Links {
-    // Public repository. Forks should point these at their own repository.
+    // Public repository and website. Forks should point these at their own.
     static let repository = URL(string: "https://github.com/meltemiapps/vhf-ready")!
-    static let privacy = URL(string: "https://github.com/meltemiapps/vhf-ready/blob/main/PRIVACY.md")!
+    static let privacy = URL(string: "https://meltemiapps.co.uk/vhf-ready/privacy/")!
+    static let support = URL(string: "https://meltemiapps.co.uk/vhf-ready/support/")!
     static let disclaimer = URL(string: "https://github.com/meltemiapps/vhf-ready/blob/main/DISCLAIMER.md")!
 }
 
@@ -62,6 +63,7 @@ struct AboutView: View {
             Section("Open source") {
                 Link(destination: Links.repository) { Label("Source code and licences", systemImage: "chevron.left.forwardslash.chevron.right") }
                 Link(destination: Links.privacy) { Label("Privacy policy", systemImage: "hand.raised") }
+                Link(destination: Links.support) { Label("Support", systemImage: "questionmark.bubble") }
                 Link(destination: Links.disclaimer) { Label("Disclaimer", systemImage: "doc.text") }
             }
 

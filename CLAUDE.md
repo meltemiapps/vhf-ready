@@ -31,7 +31,7 @@ This code was written without access to a Mac, so it has not been compiled yet. 
 
 - `project.yml`: XcodeGen spec. Bundle ID is `com.meltemiapps.vhfready` (tests: `com.meltemiapps.vhfready.tests`).
 - `VHFReady/Resources/Content/en/*.json`: study content. Generated from `tools/make_content.py`. Edit the script, then rerun `python3 tools/make_content.py VHFReady/Resources/Content/en`.
-- `VHFReady/Resources/Localizable.xcstrings`: 92 interface strings × 16 languages. Generated from `tools/make_strings.py`. After the first Xcode build, Xcode owns this file; edit it in Xcode from then on.
+- `VHFReady/Resources/Localizable.xcstrings`: 93 interface strings × 16 languages. Generated from `tools/make_strings.py`. After the first Xcode build, Xcode owns this file; edit it in Xcode from then on.
 - Module titles and distress-nature labels are dynamic keys (`extractionState: manual`), so Xcode won't flag them as stale.
 
 ## Open items before App Store submission

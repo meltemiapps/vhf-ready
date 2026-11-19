@@ -1,6 +1,8 @@
 # Privacy policy
 
-_Last updated: 15 November 2026_
+_Last updated: 19 November 2026_
+
+The canonical version of this policy is at <https://meltemiapps.co.uk/vhf-ready/privacy/>.
 
 VHF Ready is an unofficial study app. It is not affiliated with or endorsed by any training organisation, examining body, regulator or government agency (see [DISCLAIMER.md](DISCLAIMER.md)).
 
@@ -13,6 +15,7 @@ VHF Ready does not collect, transmit, sell or share any personal data.
 The app saves your study progress on your device only, using standard iOS app storage:
 
 - which lessons you have completed
+- the last lesson you opened
 - your best quiz scores
 - which flashcards you have marked as known
 - that you have accepted the in-app disclaimer
