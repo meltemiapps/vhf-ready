@@ -29,6 +29,7 @@ struct QuizHomeView: View {
                 }
             }
         }
+        .readableListWidth()
         .navigationTitle("Choose a quiz")
     }
 
@@ -140,6 +141,7 @@ struct QuizView: View {
                 .disabled(selected == nil)
                 .opacity(selected == nil ? 0.5 : 1)
             }
+            .readableWidth()
             .padding(20)
         }
     }
@@ -183,6 +185,7 @@ struct QuizView: View {
             Button("Try again") { start() }.buttonStyle(PrimaryButtonStyle())
             Button("Done") { dismiss() }.buttonStyle(SecondaryButtonStyle())
         }
+        .readableWidth()
         .padding(20)
     }
 }

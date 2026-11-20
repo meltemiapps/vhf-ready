@@ -31,6 +31,7 @@ struct ModuleView: View {
                 }
             }
         }
+        .readableListWidth()
         .navigationTitle(LocalizedStringKey(module.titleKey))
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -67,6 +68,7 @@ struct LessonView: View {
 
                 actions.padding(.top, 8)
             }
+            .readableWidth()
             .padding(20)
         }
         .background(Theme.background)

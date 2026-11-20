@@ -13,6 +13,7 @@ struct DrillsView: View {
                     .frame(minHeight: 44)
             }
         }
+        .readableListWidth()
         .navigationTitle("Radio drills")
     }
 }
@@ -33,6 +34,7 @@ struct FlashcardsView: View {
             content
             ScrollView { content }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .background(Theme.background)
         .navigationTitle("Phonetic cards")
         .navigationBarTitleDisplayMode(.inline)
@@ -68,6 +70,7 @@ struct FlashcardsView: View {
                 Spacer()
             }
         }
+        .readableWidth()
         .padding(20)
     }
 
@@ -156,6 +159,7 @@ struct MaydayBuilderView: View {
                 }
             }
         }
+        .readableListWidth()
         .navigationTitle("Build a practice Mayday")
         .navigationBarTitleDisplayMode(.inline)
         .onDisappear { speaker.stop() }

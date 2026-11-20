@@ -21,6 +21,7 @@ struct HomeView: View {
                 quickTiles
                 modules
             }
+            .readableWidth()
             .padding(20)
         }
         .background(Theme.background)

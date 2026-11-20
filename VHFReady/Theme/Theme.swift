@@ -42,6 +42,40 @@ extension Color {
     init(hex: UInt32) { self.init(UIColor(hex: hex)) }
 }
 
+/// Wide screens (iPad) cap text and controls at a readable column, centred.
+/// iPhone screens are narrower than the cap, so nothing changes there.
+enum ReadableWidth {
+    static let max: CGFloat = 600
+}
+
+private struct ReadableListWidth: ViewModifier {
+    @State private var width: CGFloat = 0
+
+    func body(content: Content) -> some View {
+        Group {
+            // Any explicit margin replaces the list's own insets, so leave
+            // narrow screens (every iPhone) completely untouched.
+            if width > ReadableWidth.max + 80 {
+                content.contentMargins(.horizontal, (width - ReadableWidth.max) / 2, for: .scrollContent)
+            } else {
+                content
+            }
+        }
+        .onGeometryChange(for: CGFloat.self) { $0.size.width } action: { width = $0 }
+    }
+}
+
+extension View {
+    /// For stacks and scroll view content: at most `ReadableWidth.max` wide, centred.
+    func readableWidth() -> some View {
+        frame(maxWidth: ReadableWidth.max).frame(maxWidth: .infinity)
+    }
+
+    /// For `List` and `Form`, which size their own rows: widens the side margins
+    /// so the rows are at most `ReadableWidth.max` wide, centred.
+    func readableListWidth() -> some View { modifier(ReadableListWidth()) }
+}
+
 struct CardStyle: ViewModifier {
     func body(content: Content) -> some View {
         content

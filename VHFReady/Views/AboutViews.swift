@@ -79,6 +79,7 @@ struct AboutView: View {
                     .listRowBackground(Color.clear)
             }
         }
+        .readableListWidth()
         .navigationTitle("About & privacy")
         .confirmationDialog("Reset progress", isPresented: $confirmReset) {
             Button("Reset progress", role: .destructive) { progress.resetProgress() }
@@ -118,6 +119,7 @@ struct DisclaimerSheet: View {
                 Button("I understand") { progress.acceptDisclaimer() }
                     .buttonStyle(PrimaryButtonStyle())
             }
+            .readableWidth()
             .padding(24)
         }
         .background(Theme.background)
