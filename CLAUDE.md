@@ -5,9 +5,9 @@ Unofficial, open-source iOS study guide for the marine VHF Short Range Certifica
 
 ## Status
 
-- iOS: 1.0 (3) live on the App Store. App Store ID `6836980342`: https://apps.apple.com/app/vhf-ready/id6836980342
-- Git tag `v1.0.0` marks the commit that built 1.0 (3).
-- Next work: the Android version.
+- iOS: 1.1 (4) Liquid Glass UI refresh, submitted to App Review; next is Android
+- App Store ID `6836980342`: https://apps.apple.com/app/vhf-ready/id6836980342
+- Git tags mark the commit that built each release: `v1.0.0` = 1.0 (3), `v1.1.0` = 1.1 (4).
 
 ## Hard constraints
 
