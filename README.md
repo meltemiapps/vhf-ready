@@ -2,6 +2,12 @@
 
 **An unofficial, open-source study guide for the marine VHF Short Range Certificate (SRC), for iPhone and iPad.**
 
+<a href="https://apps.apple.com/app/vhf-ready/id6836980342"><img src="https://tools.applemarketingtools.com/api/badges/download-on-the-app-store/black/en-us" alt="Download on the App Store" height="40"></a>
+
+Available for iPhone, iPad and Apple Silicon Macs.
+
+Website: [meltemiapps.co.uk/vhf-ready](https://meltemiapps.co.uk/vhf-ready/) · [Privacy](https://meltemiapps.co.uk/vhf-ready/privacy/) · [Support](https://meltemiapps.co.uk/vhf-ready/support/)
+
 > VHF Ready is an independent revision aid. It is not affiliated with, endorsed by, sponsored by or connected to any training organisation, examining body, regulator, government agency or equipment manufacturer. It does not award any certificate or licence and is no substitute for an approved course and assessment. See [DISCLAIMER.md](DISCLAIMER.md).
 
 ## What it does

@@ -3,6 +3,12 @@
 Unofficial, open-source iOS study guide for the marine VHF Short Range Certificate (SRC).
 **Not** related to any first-aid app. Do not mix content or code from other projects into this repo.
 
+## Status
+
+- iOS: 1.0 (3) live on the App Store. App Store ID `6836980342`: https://apps.apple.com/app/vhf-ready/id6836980342
+- Git tag `v1.0.0` marks the commit that built 1.0 (3).
+- Next work: the Android version.
+
 ## Hard constraints
 
 - Unofficial. Never add names, logos, colours or styling of any training organisation, examining body, regulator or manufacturer. Never imply affiliation. The disclaimer sheet on first launch and the About screen must stay.
