@@ -24,7 +24,7 @@ struct HomeView: View {
             .readableWidth()
             .padding(20)
         }
-        .background(Theme.background)
+        .appBackground()
         .toolbar(.hidden, for: .navigationBar)
         .navigationDestination(for: Module.self) { ModuleView(module: $0) }
         .navigationDestination(for: Lesson.self) { LessonView(lesson: $0) }
@@ -64,14 +64,17 @@ struct HomeView: View {
                             .foregroundStyle(.white)
                             .padding(.horizontal, 16)
                             .frame(minHeight: 44)
-                            .background(Color(hex: 0xC2410C), in: RoundedRectangle(cornerRadius: 12))
+                            .glassSurface(in: Capsule(), tint: Color(hex: 0xC2410C), interactive: true,
+                                          fallback: Color(hex: 0xC2410C), fallbackStroke: nil)
                     }
                 }
             }
             Spacer(minLength: 0)
         }
         .padding(20)
-        .background(Color(hex: 0x0B2540), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+        .glassSurface(in: RoundedRectangle(cornerRadius: 24, style: .continuous),
+                      tint: Color(hex: 0x0B2540).opacity(0.88),
+                      fallback: Color(hex: 0x0B2540), fallbackStroke: nil)
     }
 
     private var quickTiles: some View {
@@ -96,7 +99,7 @@ struct HomeView: View {
             subtitle.font(.footnote).foregroundStyle(Theme.secondaryText)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .card()
+        .card(interactive: true)
     }
 
     private var modules: some View {
@@ -141,9 +144,7 @@ struct ModuleRow: View {
                 .font(.footnote.weight(.semibold))
                 .foregroundStyle(Theme.secondaryText)
         }
-        .padding(14)
-        .background(Theme.card, in: RoundedRectangle(cornerRadius: 14))
-        .overlay(RoundedRectangle(cornerRadius: 14).stroke(Theme.border))
+        .card(padding: 14, cornerRadius: 18, interactive: true)
         .accessibilityElement(children: .combine)
     }
 }

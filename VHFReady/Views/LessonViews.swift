@@ -71,7 +71,7 @@ struct LessonView: View {
             .readableWidth()
             .padding(20)
         }
-        .background(Theme.background)
+        .appBackground()
         .navigationBarTitleDisplayMode(.inline)
         .onAppear { progress.markOpened(lesson) }
     }
@@ -108,7 +108,7 @@ struct ContentLanguageNote: View {
         .foregroundStyle(Theme.secondaryText)
         .padding(12)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Theme.card, in: RoundedRectangle(cornerRadius: 12))
+        .glassSurface(in: RoundedRectangle(cornerRadius: 16, style: .continuous), fallbackStroke: nil)
     }
 }
 
@@ -162,7 +162,7 @@ struct BlockView: View {
             .foregroundStyle(Theme.navy)
             .padding(14)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(Theme.card, in: RoundedRectangle(cornerRadius: 14))
+            .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallbackStroke: nil)
         case .warning(let text):
             Label {
                 Text(verbatim: text).font(.subheadline)

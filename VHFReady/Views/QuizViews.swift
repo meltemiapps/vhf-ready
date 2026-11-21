@@ -78,7 +78,7 @@ struct QuizView: View {
                 questionView(questions[index])
             }
         }
-        .background(Theme.background)
+        .appBackground()
         .navigationTitle(title)
         .navigationBarTitleDisplayMode(.inline)
         .onAppear { if questions.isEmpty { start() } }
@@ -217,8 +217,12 @@ struct AnswerButton: View {
             }
             .padding(14)
             .frame(minHeight: 56)
-            .background(fill, in: RoundedRectangle(cornerRadius: 14))
-            .overlay(RoundedRectangle(cornerRadius: 14).stroke(stroke, lineWidth: state == .idle ? 1 : 2))
+            .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous),
+                          tint: glassTint, interactive: state == .idle || state == .selected,
+                          fallback: fill, fallbackStroke: nil)
+            .overlay(RoundedRectangle(cornerRadius: 18, style: .continuous)
+                .stroke(stroke, lineWidth: state == .idle ? 1 : 2)
+                .opacity(state == .idle ? glassIdleStrokeOpacity : 1))
         }
         .buttonStyle(.plain)
         .contentDirection()
@@ -231,6 +235,19 @@ struct AnswerButton: View {
         case .wrong: Theme.errorFill
         default: Theme.card
         }
+    }
+    /// Correct and wrong answers keep their colour meaning on glass.
+    private var glassTint: Color? {
+        switch state {
+        case .correct: Theme.success.opacity(0.35)
+        case .wrong: Theme.error.opacity(0.35)
+        default: nil
+        }
+    }
+    /// Glass draws its own edge, so the idle hairline is only needed on the fallback.
+    private var glassIdleStrokeOpacity: Double {
+        if #available(iOS 26.0, *) { return 0 }
+        return 1
     }
     private var stroke: Color {
         switch state {

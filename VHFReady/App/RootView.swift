@@ -24,6 +24,7 @@ struct RootView: View {
                 .tabItem { Label("About", systemImage: "info.circle") }
                 .tag(Tab.about)
         }
+        .glassTabBar()
         .sheet(isPresented: Binding(
             get: { !progress.hasAcceptedDisclaimer },
             set: { _ in }

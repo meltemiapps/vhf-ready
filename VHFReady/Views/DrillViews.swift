@@ -35,7 +35,7 @@ struct FlashcardsView: View {
             ScrollView { content }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        .background(Theme.background)
+        .appBackground()
         .navigationTitle("Phonetic cards")
         .navigationBarTitleDisplayMode(.inline)
         .onChange(of: deck) { index = 0; flipped = false }
@@ -96,8 +96,9 @@ struct FlashcardsView: View {
             .contentDirection(.procedure)
             .padding(24)
             .frame(maxWidth: .infinity, minHeight: 340)
-            .background(Theme.card, in: RoundedRectangle(cornerRadius: 28, style: .continuous))
-            .shadow(color: .black.opacity(0.12), radius: 16, y: 8)
+            .glassSurface(in: RoundedRectangle(cornerRadius: 32, style: .continuous),
+                          interactive: true, fallbackStroke: nil)
+            .shadow(color: .black.opacity(0.10), radius: 16, y: 8)
         }
         .buttonStyle(.plain)
         .accessibilityHint(Text("Tap card to flip"))

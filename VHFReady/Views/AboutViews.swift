@@ -122,6 +122,6 @@ struct DisclaimerSheet: View {
             .readableWidth()
             .padding(24)
         }
-        .background(Theme.background)
+        .appBackground()
     }
 }
